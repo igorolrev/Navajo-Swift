@@ -26,17 +26,17 @@
 import Foundation
 
 /// PasswordValidator validates passwords with custom rules.
-open class PasswordValidator {
+public class PasswordValidator {
 
-    open var rules: [PasswordRule] = []
+    public var rules: [PasswordRule] = []
 
     /// PasswordValidator object which checks if the length of password is between 6 and 24.
-    open static var standard: PasswordValidator {
+    public static var standard: PasswordValidator {
         return PasswordValidator(rules: [standardLengthRule])
     }
 
     /// Length rule having minimum of 6 and maximum of 24.
-    open static var standardLengthRule: LengthRule {
+    public static var standardLengthRule: LengthRule {
         return LengthRule(min: 6, max: 24)
     }
 
@@ -55,7 +55,7 @@ open class PasswordValidator {
     /// - parameter password: Password string to be validated
     ///
     /// - returns: Failing rules. nil if all of the rules are passed.
-    open func validate(_ password: String) -> [PasswordRule]? {
+    public func validate(_ password: String) -> [PasswordRule]? {
         var failingRules: [PasswordRule] = []
 
         for rule in rules {

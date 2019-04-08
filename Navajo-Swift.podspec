@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "Navajo-Swift"
-  s.version          = "2.0.0"
+  s.version          = "2.0.1"
   s.summary          = "Password Validator & Strength Evaluator"
 
   s.description      = <<-DESC
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.source                = { :git    => "https://github.com/jasonnam/Navajo-Swift.git",
                               :commit => "3a86297bf56f17043982436c36f3489831514475",
-                              :tag    => "2.0.0" }
+                              :tag    => "2.0.1" }
 
   s.source_files = "Source/*.{swift}"
   s.requires_arc = true
